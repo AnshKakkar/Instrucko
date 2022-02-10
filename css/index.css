@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+}
+
+.logo {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  height: 4rem;
+  z-index: 2;
+  background: white;
+}
+.z-index-fix {
+  z-index: 2;
+}
+
+.bottom-last-container {
+  position: relative;
+}
+.bottom-last-container img {
+  position: absolute;
+  height: 6rem;
+  left: 21%;
+}
+.middle-section {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.bg-text {
+  background: rgb(255 152 0);
+  color: white;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 0.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.space-bw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.space-ar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.space-ev {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* random elements */
+
+.randomnumber {
+  position: absolute;
+  padding: 10px;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+/* ------ */
+
+/* responsive design */
+
+@media only screen and (max-width: 538px) {
+  .bottom-last-container img {
+    height: 2rem;
+  }
+  .navbar img:nth-child(2) {
+    height: 2rem !important;
+  }
+  .logo {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    height: 3rem;
+    z-index: 2;
+  }
+  .course-container {
+    width: 100% !important;
+  }
+  .bg-text {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .bottom-last-container img {
+    height: 2.5rem;
+  }
+  .navbar img:nth-child(2) {
+    height: 2.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .navbar img:nth-child(2) {
+    height: 1.5rem;
+  }
+}
+
+/* for phone number library */
+
+.iti {
+  width: 100% !important;
+}
+
+.iti__country-list {
+  width: 300px !important;
+}

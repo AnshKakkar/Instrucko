@@ -1,0 +1,216 @@
+.flex-column {
+  flex-direction: column !important;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+.video-container iframe {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  margin: 0.5rem;
+}
+.video-container-wrapper1 {
+  display: flex;
+  justify-content: space-between;
+}
+.middle-container {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.middle-container-text {
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+
+.middle-container-text p:nth-child(1) {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.middle-container-text p:nth-child(2),
+p:nth-child(3) {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.middle-container-text p:nth-child(4) {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.middle-svg {
+  width: 90%;
+  z-index: 1;
+}
+.hide-middle-container {
+  display: none;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 1316px) {
+  .middle-container-text p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .middle-container-text p:nth-child(2),
+  p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .middle-container-text p:nth-child(4) {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1114px) {
+  .middle-container-text p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .middle-container-text p:nth-child(2),
+  p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .middle-container-text p:nth-child(4) {
+    font-size: 1rem;
+  }
+  .middle-container {
+    display: none;
+  }
+  .hide-middle-container {
+    display: flex;
+    justify-content: center;
+  }
+  .video-container-wrapper1 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .video-container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 508px) {
+  .middle-container-text p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .middle-container-text p:nth-child(2),
+  p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+  .middle-container-text p:nth-child(4) {
+    font-size: 0.9rem;
+  }
+  .middle-svg {
+    width: 100%;
+  }
+  .middle-container-text {
+    bottom: 34px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* .video-container iframe {
+    width: 100%;
+    height: 12rem;
+    border-radius: 12px;
+    margin: 0.2rem;
+  }
+  .video-container-wrapper1 {
+    display: unset;
+  } */
+  .video-container {
+    display: none;
+  }
+  .render-iframe-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .render-iframe-mobile div:nth-child(1) {
+    display: flex;
+    overflow-y: scroll;
+  }
+  .render-iframe-mobile div div {
+    margin: 0.5rem;
+  }
+  .render-iframe-mobile iframe {
+    border-radius: 8px;
+    height: 15rem;
+  }
+  .middle-container-text {
+    bottom: 63px;
+    left: 51px;
+  }
+  .render-iframe-mobile::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .middle-container-text {
+    bottom: 34px !important;
+  }
+}
+
+/* carousle container */
+
+.carousel-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container div {
+  width: 90%;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.carousel iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 250px;
+}
+.carousel-btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  width: 50% !important;
+}
+.carousel-btn span {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: rgb(247, 247, 250);
+  box-shadow: rgb(0 0 0 / 30%) 0px 4px;
+  transition: all 0.2s ease 0s;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin-right: 1rem;
+}
+/* .carousel-btn span:hover {
+  box-shadow: none !important;
+} */
+
+.carousel-btn-pressed {
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 430px) {
+  .carousel-container {
+    display: flex;
+  }
+}
+/* -------------- */

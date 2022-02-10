@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>instrucko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- telephone number -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.min.js"
+      integrity="sha512-L3moecKIMM1UtlzYZdiGlge2+bugLObEFLOFscaltlJ82y0my6mTUugiz6fQiSc5MaS7Ce0idFJzabEAl43XHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css"
+      integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="./assets/logo.svg" alt="logo" class="logo" />
+      <img
+        src="./assets/topRightElement.svg"
+        class="z-index-fix"
+        alt="right svg"
+      />
+    </nav>
+    <!-- random elements -->
+    <!-- <img src="./assets/prop1.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop2.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop3.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop4.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop1.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop2.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop3.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop4.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop1.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop2.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop3.svg" alt="props" class="randomnumber" />
+    <img src="./assets/prop4.svg" alt="props" class="randomnumber" /> -->
+    <!-- ------ -->
+    <section class="middle-section">
+      <div class="center landing-heading">
+        <p class="heading">
+          <span class="color-text">Global Skills for Global Leaders</span><br />
+          Content created by experts from <br />
+          <span class="color-text">University of Oxford</span>
+        </p>
+      </div>
+      <div class="space-ar video-form-container">
+        <div
+          style="display: flex; flex-direction: column"
+          class="landing-video-container center"
+        >
+          <p style="font-size: 28px; font-weight: bolder; margin-bottom: 1rem">
+            Live Personalised Online Classes
+          </p>
+          <p
+            style="
+              text-align: left;
+              width: 100%;
+              font-size: 22px;
+              color: #f88408;
+              font-weight: bolder;
+            "
+          >
+            Age: 3 – 12 years
+          </p>
+          <img src="./assets/landingPageImg.png" alt="background" />
+          <!-- <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0LVrPOo4P3A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe> -->
+        </div>
+        <form class="contact-us-from" action="">
+          <p class="contact-us-from-heading">
+            Contact <span class="color-text">Us</span>
+          </p>
+          <input
+            required
+            class="input-style"
+            type="text"
+            placeholder="Parent's Name*"
+          />
+          <input
+            required
+            class="input-style"
+            type="text"
+            placeholder="Child's Name*"
+          />
+          <!-- <input
+            required
+            class="input-style"
+            type="tel"
+            pattern="[0-9]*"
+            placeholder="Mobile Number*"
+          /> -->
+          <input
+            placeholder="Parent's Number*"
+            class="input-style"
+            id="phone"
+            type="tel"
+            required
+          />
+
+          <div class="child-age-container-outer">
+            <p>Child's Grade *</p>
+            <div class="space-bw child-age-container">
+              <div>
+                <!-- <p>Grade</p> -->
+                <select class="child-age-box" name="" id="">
+                  <option selected disabled hidden>KG</option>
+                  <option value="Pre">Pre KG</option>
+                  <option value="Lower">Lower KG</option>
+                  <option value="Upper">Upper KG</option>
+                </select>
+                <!-- <p>K-2</p> -->
+              </div>
+              <div class="child-age-box">
+                <!-- <p>Grade</p> -->
+                <p>1</p>
+              </div>
+              <div class="child-age-box">
+                <!-- <p>Grade</p> -->
+                <p>2</p>
+              </div>
+              <div class="child-age-box">
+                <!-- <p>Grade</p> -->
+                <p>3</p>
+              </div>
+              <div class="child-age-box">
+                <!-- <p>Grade</p> -->
+                <p>4</p>
+              </div>
+              <div class="child-age-box">
+                <!-- <p>Grade</p> -->
+                <p>5</p>
+              </div>
+              <div class="child-age-box">
+                <!-- <p>Grade</p> -->
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-checkbox-container center">
+            <input required type="checkbox" />
+            <p>I agree to being contacted on WhatsApp and SMS</p>
+          </div>
+          <div class="form-btn-container center">
+            <button type="submit">Book a Free Trial Class</button>
+            <!-- <a href="./courses.html">Book a Free Trial Class</a> -->
+          </div>
+        </form>
+      </div>
+      <div class="second-container">
+        <p class="second-container-heading">
+          What makes
+          <strong><span class="color-text">instrucko unique?</span></strong>
+        </p>
+        <div class="instrucko-unique-container space-bw"></div>
+      </div>
+      <div class="third-container">
+        <p class="second-container-heading">
+          Why Parents love
+          <strong><span class="color-text">instrucko?</span></strong>
+        </p>
+        <div class="reviews-container space-ev"></div>
+      </div>
+    </section>
+    <section class="bottom-last-container z-index-fix">
+      <img src="./assets/bottomElement.svg" alt="bottom svg" />
+    </section>
+    <script src="./scripts/index.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
