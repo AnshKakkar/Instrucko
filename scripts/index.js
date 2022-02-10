@@ -31,7 +31,7 @@ let videoUrls;
 let newVideoContainerScroll = [
   "https://www.youtube.com/embed/gVWWPSjQDlk",
   "https://www.youtube.com/embed/KkfBWkcnwVU",
-  "https://www.youtube.com/embed/Mi2v5GYeTHI",
+  "https://www.youtube.com/embed/H-MDh7wBGmU",
   "https://www.youtube.com/embed/HGoZX0m4ng0",
   "https://www.youtube.com/embed/WCN2Ihs2PEA",
   "https://www.youtube.com/embed/G9rvXZpjQJc",
@@ -44,7 +44,7 @@ if (window.innerWidth < 430) {
       "https://www.youtube.com/embed/KkfBWkcnwVU",
     ],
     [
-      "https://www.youtube.com/embed/Mi2v5GYeTHI",
+      "https://www.youtube.com/embed/H-MDh7wBGmU",
       "https://www.youtube.com/embed/HGoZX0m4ng0",
     ],
     [
@@ -55,7 +55,7 @@ if (window.innerWidth < 430) {
 } else {
   videoUrls = [
     [
-      "https://www.youtube.com/embed/Mi2v5GYeTHI",
+      "https://www.youtube.com/embed/H-MDh7wBGmU",
       "https://www.youtube.com/embed/HGoZX0m4ng0",
     ],
     [
